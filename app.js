@@ -18,6 +18,7 @@ app.get('/', (req, res) => {
 })
 //show page
 app.get('/restaurants/:restaurant_id', (req, res) => {
+  console.log(req.params)
   res.render('show')
 })
 
