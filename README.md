@@ -4,17 +4,19 @@
 
 ## 專案畫面
 ### Index
+<img src="https://github.com/kentwuz/foodies-list/blob/main/image/index.jpg" style="zoom:50%" />
 
 ### Search
+<img src="https://github.com/kentwuz/foodies-list/blob/main/image/search.jpg" style="zoom:50%" />
 
 ### Description
-
+<img src="https://github.com/kentwuz/foodies-list/blob/main/image/detail.jpg" style="zoom:50%" />
 
 ## Installation
 
-`git clone https://github.com/kentwuz/foodies-list.git
+```git clone https://github.com/kentwuz/foodies-list.git
 cd foodies-list
-npm install`
+npm install```
 
 ## Built With
 * [Node](https://nodejs.org/) -@16.14.0
