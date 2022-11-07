@@ -20,7 +20,15 @@ app.get('/', (req, res) => {
 app.get('/restaurants/:restaurant_id', (req, res) => {
   const restaurantId = req.params.restaurant_id
   const restaurant = restaurantList.results.find(restaurant => restaurant.id.toString() == restaurantId)
-  res.render('show', {restaurant: restaurant})
+  res.render('show', { restaurant: restaurant })
+})
+//search bar
+app.get('/search', (req, res) => {
+  const keyword = req.query.keyword
+  const filterRestaurant = restaurantList.results.filter(restaurant => {
+    return restaurant.name.toLowerCase().includes(keyword.toLowerCase())
+  })
+  res.render('index', { restaurant: filterRestaurant, keyword: keyword })
 })
 
 app.listen(port, () => {
